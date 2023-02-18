@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+	<audio style="display: none;"  loop autoplay src="素材/音频/bgm.mp3" id="adu"></audio>
+	<div class="music" onclick="play()">
+		<img src="img/p2/音乐按钮.png" alt="" class="xz" id="music1"  >
+	</div>
+			
+	<div class="box">
+	
+		<div class="loging" style="display: block;">
+			<div class="hsr">
+				<div class="qiti log">
+				<img src="img/loading/左.png" alt="">
+				<img src="img/loading/中.png" alt="">
+				<img src="img/loading/右.png" alt="">
+				</div>
+				<img src="img/loading/肉.png" alt="" width="500">
+				<p>
+					<img src="img/loading/text.png" alt="" width="300" style="margin-left: 50px;">	
+					&nbsp;
+					<span style="font-size: 100px; color: darkred;" id="dian"></span>
+				</p>
+				<p style="font-size: 60px; color: darkred; margin-left: 150px;">
+					<span id="number">0</span><span>%</span>
+				</p>
+			</div>
+		</div>
+		<div class="bg">
+			<div class="bgyuanquan">
+				<div class="xuanzhaung">
+					<img src="img/p2/黄酒.png" alt="" class="hj" />
+					<img src="img/p2/冰糖.png" alt="" class="bt" />
+					<img src="img/p2/猪肉.png" alt="" class="zr" />
+					<img src="img/p2/葱姜.png" alt="" class="jc" />
+					<img src="img/p2/8角.png" alt="" class="bj" />
+				</div>
+				<div class="dprbox">
+					<img src="img/p2/东坡肉.png" alt="" class="dpr" />
+				</div>
+				<img src="img/p2/text.png" alt="" class="text" />
+				<img src="img/p2/logo.png" alt="" class="logo" />
+				<span style="color: chocolate; font-size: 36px; position: absolute; bottom: 15%;left: 15%;">了解做法</span>
+				<img src="img/滑动箭头_.png" alt="" class="huadong" width="100">
+			</div>
+			
+		</div>
+		
+		<div class="box2" style='background: url("img/p3/p3-1bg.png") no-repeat center center; background-size: 100% 100%;
+	width: 100vw;
+	position: relative;
+	height: 100vh;'>
+			<div class="list">
+				<div class="list-itme">
+			<div><img src="img/p3/猪肉亮.png" alt="" onclick="zhurou()" id="zrl"></div>
+			<div><img src="img/p3/葱姜不亮.png" alt="" onclick="jiangchong()" id="jcl"></div>
+			<div><img src="img/p3/冰糖不亮.png" alt="" onclick="bingtang()" id="btl"></div>
+			</div>
+			</div>
+	</div>
+	<div class="box3">
+		<div class="qiti">
+		<img src="img/loading/左.png" alt="">
+		<img src="img/loading/中.png" alt="">
+		<img src="img/loading/右.png" alt="">
+		</div>
+	</div>
+	<script src="js/index.js"></script>
+	<script>
+		up($(".loging")[0]);
+		up($(".bg")[0]);
+		up($(".box2")[0]);
+
+		down($(".box2")[0]);
+		down($(".box3")[0]);
+		login()
+		function login(){
+			let dian=document.getElementById("dian")
+			let inex=0;
+			let dsq=setInterval(function(){
+				dian.innerHTML+='.'
+				++inex;
+				if(inex==4){
+					inex=0;
+					dian.innerHTML=''
+				}
+				if ($('.loging')[0].style.display=='none'){
+					clearInterval(dsq);
+				}
+			},300)
+			let dsq2=setInterval(function(){
+				let number=document.getElementById('number')
+				let sum=parseInt(number.innerText)+1
+				number.innerHTML=sum
+				if(sum==101){
+					$('.loging')[0].style.display='none';
+					$('.huadong')[0].style.display='block';
+				}
+			},10)
+		}
+
+		  
+		let zhurou=()=>{
+			$('.box2')[0].style.background='url("img/p3/p3-1bg.png") center center / 100% 100% no-repeat'
+			zrl.src='img/p3/猪肉亮.png'
+			jcl.src='img/p3/葱姜不亮.png'
+			btl.src='img/p3/冰糖不亮.png'
+			}
+		let jiangchong=()=>{
+			zrl.src='img/p3/猪肉不亮.png'
+			jcl.src='img/p3/葱姜亮1.png'
+			btl.src='img/p3/冰糖不亮.png'
+			$('.box2')[0].style.background='url("img/p3/p3-2bg.png") center center / 100% 100% no-repeat'
+		}
+		let bingtang=()=>{
+			zrl.src='img/p3/猪肉不亮.png'
+			jcl.src='img/p3/葱姜不亮.png'
+			btl.src='img/p3/冰糖亮.png'
+			$('.box2')[0].style.background='url("img/p3/p3-3bg.png") center center / 100% 100% no-repeat'
+		}
+		let flag=0;
+		let play=()=>{
+
+			if(flag==0){
+				$("#music1")[0].classList='daw'
+				flag=1;
+				document.getElementById("adu").pause()
+			}
+			else if(flag==1){
+				flag--
+				$("#music1")[0].classList='xz'
+				document.getElementById("adu").play()
+			}
+			
+		}
+	</script>
+</body>
+
+</html>

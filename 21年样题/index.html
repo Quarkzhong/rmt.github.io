@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/index.css">
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+
+		<div class="box" style="top: -0vh;">
+			<div class="loading">
+				<div class="mskbg" style="opacity: 0.8;"></div>
+				<div class="msk">
+				</div>
+				<div class="mskzd" id="mskzd">
+				</div>
+				<div class="msknumber" id="msknumber">0%</div>
+			</div>
+			<div class="one">
+				<audio src="素材/音频/背景音乐.mp3" style="display: none;" loop id="music"></audio>
+				<div class="yuanquan" onclick="stopmusic()"></div>
+				<img src="img/p1/太阳.png" class="sum" id="onesum">
+				<div class="oneqiu">
+					<img id='zuqiu' src="img/p1/足球.png" alt="" style="left: 0%; transform: rotate(0deg);">
+				</div>
+				<img src="img/p1/按钮.png" alt="按钮" id="onebutton" class="onebutton" onclick="go()">
+			</div>
+			<div class="two">
+				
+				<img src="img/p2/fanhui.png" class="fanghui" id="fanghui2" onclick="fanghuitoone()">
+				<img src="img/p1/太阳.png" class="sum" id="twosum">
+				<div class="twotext" id="twotext">
+					<span style="top: 0%;">什</span>
+					<span style="top: 0%;">么</span>
+					<span style="top: 0%;">是</span>
+					<span style="top: 0%;">亚</span>
+					<span style="top: 0%;">健</span>
+					<span style="top: 0%;">康</span>
+					<span style="top: 0%;">?</span>
+				</div>
+				<img src="img/p2/button.png" alt="按钮" id="twobutton" class="onebutton">
+			</div>
+			<div class="three">
+				<img src="img/p2/fanhui.png" class="fanghui" id="fanghui2" onclick="fanghuitotwo()">
+				<img src="img/p1/太阳.png" class="sum" id="threesum">
+				<div class="threetext" id="threetext">
+					<span style="top: 0%;">亚</span>
+					<span style="top: 0%;">健</span>
+					<span style="top: 0%;">康</span>
+					<span style="top: 0%;">测</span>
+					<span style="top: 0%;">试</span>
+				</div>
+				<div class="threebody">
+					<div class="threebutton" id="button1">
+						<img src="img/p3/未选.png" alt="" width="300" id="img1" height="78">
+						<img src="img/p3/yuan.png" alt="" width="60" class="threeyuan">
+						<span class="zimu" id="spanzimu1">A</span>
+						<span class="threeweizi" id="spantext1">经常感冒</span>
+					</div>
+
+					<div class="threebutton" id="button2">
+						<img src="img/p3/未选.png" alt="" width="300" id="img2" height="78">
+						<img src="img/p3/yuan.png" alt="" width="60" class="threeyuan">
+						<span class="zimu" id="spanzimu2">B</span>
+						<span class="threeweizi" id="spantext2">失眠多梦</span>
+					</div>
+
+					<div class="threebutton" id="button3">
+						<img src="img/p3/未选.png" alt="" width="300" id="img3" height="78">
+						<img src="img/p3/yuan.png" alt="" width="60" class="threeyuan">
+						<span class="zimu" id="spanzimu3">C</span>
+						<span class="threeweizi" id="spantext3">精神压力大</span>
+					</div>
+
+					<div class="threebutton" id="button4">
+						<img src="img/p3/未选.png" alt="" width="300" id="img4" height="78">
+						<img src="img/p3/yuan.png" alt="" width="60" class="threeyuan">
+						<span class="zimu" id="spanzimu4">D</span>
+						<span class="threeweizi" id="spantext4">注意力不集中</span>
+					</div>
+
+					<div class="threebutton" id="button5">
+						<img src="img/p3/未选.png" alt="" width="300" id="img5" height="78">
+						<img src="img/p3/yuan.png" alt="" width="60" class="threeyuan">
+						<span class="zimu" id="spanzimu5">E</span>
+						<span class="threeweizi" id="spantext5">记忆力下降</span>
+					</div>
+
+					<div class="threebutton" id="button6">
+						<img src="img/p3/未选.png" alt="" width="300" id="img6" height="78">
+						<img src="img/p3/yuan.png" alt="" width="60" class="threeyuan">
+						<span class="zimu" id="spanzimu6">F</span>
+						<span class="threeweizi" id="spantext6">焦躁不安</span>
+					</div>
+
+					<div class="threebutton" id="button7">
+						<img src="img/p3/未选.png" alt="" width="300" id="img7" height="78">
+						<img src="img/p3/yuan.png" alt="" width="60" class="threeyuan">
+						<span class="zimu" id="spanzimu7">G</span>
+						<span class="threeweizi" id="spantext7">恐惧胆怯</span>
+					</div>
+
+					<div class="threebutton" id="button8">
+						<img src="img/p3/未选.png" alt="" width="300" id="img8" height="78">
+						<img src="img/p3/yuan.png" alt="" width="60" class="threeyuan">
+						<span class="zimu" id="spanzimu8">H</span>
+						<span class="threeweizi" id="spantext8">人际关系紧张</span>
+					</div>
+
+					<div class="threebutton" id="button9">
+						<img src="img/p3/未选.png" alt="" width="300" id="img9" height="78">
+						<img src="img/p3/yuan.png" alt="" width="60" class="threeyuan">
+						<span class="zimu" id="spanzimu9">I</span>
+						<span class="threeweizi" id="spantext9">睡眠紊乱</span>
+					</div>
+
+					<div class="threebutton" id="button10">
+						<img src="img/p3/未选.png" alt="" width="300" id="img10" height="78">
+						<img src="img/p3/yuan.png" alt="" width="60" class="threeyuan">
+						<span class="zimu" id="spanzimu10">J</span>
+						<span class="threeweizi" id="spantext10">腰酸背痛</span>
+					</div>
+				</div>
+				<img src="img/p3/按钮.png" alt="按钮" id="threebutton" class="onebutton">
+			</div>
+			<div class="frou">
+				<img src="img/p2/fanhui.png" class="fanghui" id="fanghui3" onclick="fanghuitothree()">
+				<img src="img/p1/太阳.png" class="sum" id="frousum">
+				<div class="twotext" id="froutext">
+					<span style="top: 0%;">亚</span>
+					<span style="top: 0%;">健</span>
+					<span style="top: 0%;">康</span>
+					<span style="top: 0%;">测</span>
+					<span style="top: 0%;">试</span>
+					<span style="top: 0%;">结</span>
+					<span style="top: 0%;">果</span>
+				</div>
+				<div class="froustata">
+					<div class="wjx">
+						
+					</div>
+					<span id="defeng" class="defeng"></span>
+				</div>
+				<div class="froubody">
+				</div>
+				<img src="img/p4/button.png" alt="按钮" id="froubutton" class="onebutton">
+			</div>
+			<div class="five">
+				<img src="img/p2/fanhui.png" class="fanghui" id="fanghui4" onclick="fanghuitofrou()">
+				<div class="book">
+					<img src="img/p5/保证书.png" alt="" id="bzs" style="transform: scale(1.3);">
+				</div>
+				<img src="img/p5/彩带丝带飘带礼花.png" alt="" class="lihua">
+				<img src="img/p5/button.png" alt="按钮" id="fivebutton" class="onebutton" onclick="fivefanghuitotwo()">
+			</div>
+		</div>
+
+
+		<script>
+			
+			one()
+			loading()
+			two()
+			three()
+			updatazz()
+			frou()
+			
+			
+		</script>
+	</body>
+</html>

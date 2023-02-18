@@ -1,0 +1,461 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	overflow: hidden;
+}
+
+.box {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+}
+
+.loading {
+	position: absolute;
+	top: 0vh;
+	left: 0vw;
+	width: 100vw;
+	height: 100vh;
+	background: url("../img/p1login/bg.png") no-repeat center center;
+	background-size: 100% 100%;
+	transition: all 1s;
+	z-index: 999;
+}
+
+.loadingitem {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.loadingitem img {
+	width: 50vw;
+}
+
+.loadingitem span {
+	font-size: 8vw;
+	font-weight: 1000;
+}
+
+.music {
+	position: absolute;
+	right: 5%;
+	top: 5%;
+	width: 10vw;
+	z-index: 999;
+}
+
+@keyframes musicxz {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(30deg);
+	}
+
+	75% {
+		transform: rotate(-30deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+
+.one {
+	background: url('../img/p2/p2 bg.png') center center no-repeat;
+	position: absolute;
+	top: 0vh;
+	left: 0vw;
+	width: 100vw;
+	height: 100vh;
+	background-size: 100% 100%;
+	z-index: 998;
+	transition: all 1s;
+}
+
+.onelunzi {}
+
+.onelunzi img:nth-child(1) {
+	width: 12vh;
+	position: absolute;
+	top: 26vh;
+	left: 29vw;
+	animation: lunzixz 2s infinite linear;
+}
+
+.onelunzi img:nth-child(2) {
+	width: 9vh;
+	position: absolute;
+	top: 29vh;
+	left: 60vw;
+	animation: lunzixz 2s infinite linear;
+}
+
+@keyframes lunzixz {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.onebody {
+	position: absolute;
+	width: 80vw;
+	height: 30vh;
+	top: 46%;
+	font-weight: 800;
+	font-size: 5.5vw;
+	text-align: center;
+	left: 10%;
+	line-height: 3.6vh;
+}
+
+.onebody p {
+	transition: all 1s;
+}
+
+.downjt {
+	position: absolute;
+	bottom: 3%;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: all .5s;
+	width: 8vw;
+	animation: shangxia 2s infinite linear;
+}
+
+@keyframes shangxia {
+	0% {
+		transform: translateY(0%);
+	}
+
+	25% {
+		transform: translateY(-20%);
+	}
+
+	75% {
+		transform: translateY(20%);
+	}
+
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+.two {
+	background: url('../img/p3/bg.png') center center no-repeat;
+	position: absolute;
+	top: 0vh;
+	left: 0vw;
+	width: 100vw;
+	height: 100vh;
+	background-size: 100% 100%;
+	z-index: 997;
+	transition: all 1s;
+}
+
+.zuo {
+	background: url('../img/p3/up.png') no-repeat top center;
+	width: 100vw;
+	height: 60vh;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: all 1s;
+}
+
+.zuo img {
+	width: 50vw;
+	position: absolute;
+	top: 18%;
+	left: 10%;
+	transition: all 1s;
+}
+
+.you {
+	background: url('../img/p3/down.png') no-repeat bottom center;
+	width: 100vw;
+	height: 60vh;
+	background-size: 100% 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: all 1s;
+}
+
+.you img {
+	width: 50vw;
+	position: absolute;
+	bottom: 45%;
+	right: 10%;
+	transition: all 1s;
+}
+
+.three {
+	background: url('../img/p4/bg.png') center center no-repeat;
+	position: absolute;
+	top: 0vh;
+	left: 0vw;
+	width: 100vw;
+	height: 100vh;
+	background-size: 100% 100%;
+	z-index: 995;
+	transition: all 1s;
+}
+
+.digua {
+	position: absolute;
+	width: 50vw;
+	bottom: 50%;
+	z-index: 9;
+	transition: all 1s;
+}
+
+.touzi {
+	position: absolute;
+	width: 50vw;
+	bottom: 50%;
+	right: 0;
+	z-index: 9;
+	transition: all 1s;
+}
+
+.daozi {
+	position: absolute;
+	width: 70vw;
+	bottom: 48%;
+	height: 40vh;
+	left: 15%;
+	transition: all 1s;
+}
+
+.threetext {
+	position: absolute;
+	width: 80vw;
+	left: 10%;
+	top: 53%;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.threebody {
+	position: absolute;
+	width: 80vw;
+	left: 10%;
+	top: 75%;
+	height: 20vh;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.threebody input {
+	box-sizing: content-box;
+	width: 35vw;
+	margin-right: 7vw;
+	height: 5vh;
+	border: 5px solid black;
+	font-size: 5vw;
+	font-weight: 800;
+	margin-bottom: 5vw;
+}
+
+.threebody select {
+	box-sizing: content-box;
+	width: 35vw;
+	height: 5vh;
+	border: 5px solid black;
+	font-size: 5vw;
+	font-weight: 800;
+	margin-bottom: 5vw;
+}
+
+.threebody select option {
+	font-weight: 800;
+	font-size: 1vw;
+}
+
+.threebody img {
+	width: 80vw;
+}
+
+.mskbg {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	background: black;
+	top: 0;
+	left: 0;
+	z-index: 998;
+	opacity: .5;
+}
+
+.msk {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	z-index: 999;
+	top: 40%;
+	left: 10%;
+}
+
+
+.frou{
+	position: absolute;
+	width: 100vw;height: 100vh;
+	background: url('../img/p5/bg.png') no-repeat center center;
+	background-size: 100% 100%; 
+	z-index: 990;
+}
+
+.froufhui{
+	width: 10vw;
+	height: 10vw;
+	background: gainsboro;
+	opacity: .7;
+	font-size: 8vw;
+	display: flex;
+	font-weight: 800;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	position: absolute;
+	top: 5%;
+	left: 5%;
+}
+
+.jsqblack{
+	background: url("../img/p5/black.png") no-repeat center center;
+	background-size: 100% 100%;
+	width: 100vw;
+	height: 90vh;
+	position: absolute;
+	bottom: 0;
+}
+
+.froubutton{
+	height: 56vh;
+	width:98vw;
+	position: absolute;
+	bottom: 4%;
+	left: 1%;
+}
+.froubody{
+	height: 18vh;
+	width: 98vw;
+	margin-bottom: .5vh;
+}
+.frouitem{
+	background: white;
+	width: 24vw;
+	float: left;
+	margin-right: 0.5vw;
+	height: 18vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5vw;
+	font-weight: 900;
+}
+.gray{
+	background-color: rgb(165, 165, 165);
+}
+.yellow{
+	background-color: rgb(255, 206, 92);
+}
+.bianda{
+	animation: daxiao 1s infinite linear;
+}
+@keyframes daxiao {
+	0%{
+		font-size: 5vw;
+	}
+	100%{
+		font-size: 8vw;
+	}
+}
+.tooyellow{
+	background-color: rgb(255, 167, 67);
+}
+.displayitem{
+	position: absolute;
+	bottom: 68%;
+	left: 1%;
+	width: 98vw;
+	height: 25vh;
+}
+.ksjsimg{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.frouguocheng{
+	font-size: 10vw;
+	color: white;
+	font-weight: 900;
+	margin-top: 10vh;
+	float: right;
+}
+.froujieguo{
+	font-size: 10vw;
+	color: white;
+	font-weight: 900;
+	position: absolute;
+	bottom: 0vh;
+	right: 0;
+}
+.froumskbg{
+	width: 100vw;
+	height: 100vh;
+	background: black;
+	z-index: 999;
+	position: absolute;
+	opacity: .5;
+}
+.froumsk{
+	background: url("../img/p5/报告.png") no-repeat center center;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: 999;
+}
+.froupingyu{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,10%);
+}
+.frouname{
+	position: absolute;
+	top: 39%;
+	left: 50%;
+	font-size: 6vw;
+	font-weight: 800;
+}
+.froufengshu{
+	position: absolute;
+	top: 42%;
+	left: 45%;
+	font-size: 6vw;
+	font-weight: 800;
+}
+.froujg{
+	position: absolute;
+	top: 44.5%;
+	left: 55%;
+	font-size: 6vw;
+	font-weight: 800;
+}

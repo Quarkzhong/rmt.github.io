@@ -1,0 +1,297 @@
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body,html{
+	overflow: hidden;
+}
+
+.box{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+}
+
+.loading{
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	z-index: 999;
+}
+
+.mskbg{
+	background: white;
+	width: 100vw;
+	height: 100vh;
+}
+.msk{
+	background: green;
+	border-radius: 20vw;
+	width: 80vw;
+	height: 2vh;
+	position: absolute;
+	left: 10%;
+	top: 50%;
+}
+
+.mskzd{
+	background: orange;
+	border-radius: 20vw;
+	width: 0vw;
+	height: 2vh;
+	position: absolute;
+	left: 10%;
+	top: 50%;
+}
+.msknumber{
+	border-radius: 20vw;
+	width: 80vw;
+	height: 2vh;
+	position: absolute;
+	left: 10%;
+	top: 50%;
+	text-align: center;
+	line-height: 2vh;
+	font-size: 4vw;
+}
+.one{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: url('../img/p1/背景.png') no-repeat center center;
+	background-size: 100% 100%;
+	z-index: 998;
+}
+.yuanquan{
+	position: absolute;
+	width: 10vw;
+	height: 5vh;
+	top: 3%;
+	right:5% ;
+	background: red;
+	border-radius: 50%;
+	opacity: 0;
+}
+.sum{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 1s;
+	width: 17vw;
+}
+.oneqiu{
+	
+	width: 80vw;
+	height: 5vh;
+	position: absolute;
+	top: 9%;
+	left: 10%;
+}
+.oneqiu img{
+	width: 5vh;
+	position: absolute;
+	top: 0;
+	transition: all 2s;
+}
+.onebutton{
+	position: absolute;
+	top: 88%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 35vw;
+	transition: all 1s;
+}
+
+.two{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: url('../img/p2/背景.png') no-repeat center center;
+	background-size: 100% 100%; 
+	z-index:997;
+}
+.fanghui{
+	position: absolute;
+	top: 3%;
+	left: 8%;
+	width: 7vw;
+	z-index: 9;
+}
+
+.twotext{
+	position: absolute;
+	top: 10.5%;
+	width: 85vw;
+	height: 5vh;
+	border-radius: 50vw;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	line-height: 5vh;
+	font-size: 4.5vw;
+	font-weight: 800;
+	color: white;
+	
+}
+
+.twotext span{
+	position: relative;
+	top: 0%;
+	transition: all .5s;
+}
+.three{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: url("../img/p3/背景.png") no-repeat center center;
+	background-size: 100% 100%; 
+	z-index:996;
+}
+
+.threebody{
+	position: absolute;
+	width: 77vw;
+	height: 40vh;
+	top: 31%;
+	left: 9%;
+}
+.threebody div{
+	float: left;
+	margin-left: 6vw;
+	margin-top: 7vw;
+	position: relative;
+}
+.threeyuan{
+	position: absolute;
+	top: 9%;
+	left: 5%;
+}
+.zimu{
+	position: absolute;
+	top: 11%;
+	left: 10%;
+	font-size: 4vw;
+	color: green;
+}
+.threeweizi{
+	position: absolute;
+	top: 11%;
+	left: 30%;
+	font-size: 3.5vw;
+	color: white;
+}
+
+.threetext{
+	position: absolute;
+	top: 10.5%;
+	width: 85vw;
+	height: 5vh;
+	border-radius: 50vw;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	line-height: 5vh;
+	font-size: 4.5vw;
+	font-weight: 800;
+	color: white;
+	
+}
+
+.threetext span{
+	position: relative;
+	top: 0%;
+	transition: all .5s;
+}
+
+.frou{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: url("../img/p4/bg.png") no-repeat center center;
+	background-size: 100% 100%; 
+	z-index:995;
+}
+
+.froustata{
+	position: absolute;
+	width: 40vw;
+	height: 10vh;
+
+	top: 36%;
+	left: 30%;
+}
+.wjx{
+	margin-left: 1vw;
+	margin-bottom: 1vh;
+	position: relative;
+}
+.wjx img{
+	width: 5vw;
+	margin: 1vw;
+	transition: all 1s;
+	position: relative;
+}
+.defeng{
+	font-size: 7vw;
+	color: white;
+	font-weight: 800;
+	display: flex;
+	justify-content: center;
+}
+
+.froubody{
+	
+	width: 70vw;
+	height: 27vh;
+	position: absolute;
+	top: 57%;
+	left: 15%;
+}
+.frouitem{
+	font-size: 3vw;
+	color: red;
+	width: 29vw;
+	height: 3.5vh;
+	position: relative;
+	background: whitesmoke;
+	float: left;
+	border-radius: 1vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 800;
+	margin-top: 1vh;
+}
+.frouitem:nth-child(odd){
+	margin-right: 5vw;
+	margin-left: 1vw;
+}
+.frouitem:nth-child(even){
+	margin-left: 5vw;
+}
+
+.five{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: url("../img/p5/bg.png") no-repeat center center;
+	background-size: 100% 100%; 
+	z-index:990;
+}
+
+.lihua{
+	width: 100vw;
+	position: absolute;
+	bottom: 0%;
+}
+.book{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.book img{
+	transition: all 1s;
+}

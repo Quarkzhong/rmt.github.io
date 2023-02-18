@@ -1,0 +1,162 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	overflow: hidden;
+}
+
+.box {
+	position: fixed;
+	width: 100vw;height: 100vh;
+}
+
+.frou{
+	position: absolute;
+	width: 100vw;height: 100vh;
+	background: url('../img/p5/bg.png') no-repeat center center;
+	background-size: 100% 100%; 
+	z-index: 990;
+}
+
+.froufhui{
+	width: 10vw;
+	height: 10vw;
+	background: gainsboro;
+	opacity: .7;
+	font-size: 8vw;
+	display: flex;
+	font-weight: 800;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	position: absolute;
+	top: 5%;
+	left: 5%;
+}
+
+.jsqblack{
+	background: url("../img/p5/black.png") no-repeat center center;
+	background-size: 100% 100%;
+	width: 100vw;
+	height: 90vh;
+	position: absolute;
+	bottom: 0;
+}
+
+.froubutton{
+	height: 56vh;
+	width:98vw;
+	position: absolute;
+	bottom: 4%;
+	left: 1%;
+}
+.froubody{
+	height: 18vh;
+	width: 98vw;
+	margin-bottom: .5vh;
+}
+.frouitem{
+	background: white;
+	width: 24vw;
+	float: left;
+	margin-right: 0.5vw;
+	height: 18vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5vw;
+	font-weight: 900;
+}
+.gray{
+	background-color: rgb(165, 165, 165);
+}
+.yellow{
+	background-color: rgb(255, 206, 92);
+}
+.bianda{
+	animation: daxiao 1s infinite linear;
+}
+@keyframes daxiao {
+	0%{
+		font-size: 5vw;
+	}
+	100%{
+		font-size: 8vw;
+	}
+}
+.tooyellow{
+	background-color: rgb(255, 167, 67);
+}
+.displayitem{
+	position: absolute;
+	bottom: 68%;
+	left: 1%;
+	width: 98vw;
+	height: 25vh;
+}
+.ksjsimg{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.frouguocheng{
+	font-size: 10vw;
+	color: white;
+	font-weight: 900;
+	margin-top: 10vh;
+	float: right;
+}
+.froujieguo{
+	font-size: 10vw;
+	color: white;
+	font-weight: 900;
+	position: absolute;
+	bottom: 0vh;
+	right: 0;
+}
+.froumskbg{
+	width: 100vw;
+	height: 100vh;
+	background: black;
+	z-index: 999;
+	position: absolute;
+	opacity: .5;
+}
+.froumsk{
+	background: url("../img/p5/报告.png") no-repeat center center;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: 999;
+}
+.froupingyu{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,10%);
+}
+.frouname{
+	position: absolute;
+	top: 39%;
+	left: 50%;
+	font-size: 6vw;
+	font-weight: 800;
+}
+.froufengshu{
+	position: absolute;
+	top: 42%;
+	left: 45%;
+	font-size: 6vw;
+	font-weight: 800;
+}
+.froujg{
+	position: absolute;
+	top: 44.5%;
+	left: 55%;
+	font-size: 6vw;
+	font-weight: 800;
+}
