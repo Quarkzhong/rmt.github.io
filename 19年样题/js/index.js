@@ -257,6 +257,7 @@ let onclick = () => {
 			ans += wugu
 			frouaddclass()
 		}
+		playmusic()
 	})
 	but2.addEventListener('click', () => {
 		let flag = getflag()
@@ -268,6 +269,7 @@ let onclick = () => {
 			ans += wugu
 			frouaddclass()
 		}
+		playmusic()
 	})
 	but3.addEventListener('click', () => {
 		let flag = getflag()
@@ -279,6 +281,7 @@ let onclick = () => {
 			ans += wugu
 			frouaddclass()
 		}
+		playmusic()
 	})
 	but5.addEventListener('click', () => {
 		let flag = getflag()
@@ -290,6 +293,7 @@ let onclick = () => {
 			ans += wugu
 			frouaddclass()
 		}
+		playmusic()
 	})
 	but6.addEventListener('click', () => {
 		let flag = getflag()
@@ -301,6 +305,7 @@ let onclick = () => {
 			ans += wugu
 			frouaddclass()
 		}
+		playmusic()
 	})
 	but7.addEventListener('click', () => {
 		let flag = getflag()
@@ -312,6 +317,7 @@ let onclick = () => {
 			ans += wugu
 			frouaddclass()
 		}
+		playmusic()
 	})
 
 	but9.addEventListener('click', () => {
@@ -324,6 +330,7 @@ let onclick = () => {
 			ans += laji
 			frouaddclass()
 		}
+		playmusic()
 	})
 	but10.addEventListener('click', () => {
 		let flag = getflag()
@@ -346,10 +353,12 @@ let onclick = () => {
 			ans += laji
 			frouaddclass()
 		}
+		playmusic()
 	})
 
 	but4.addEventListener('touchstart', () => {
 		but4.classList.add('tooyellow')
+		playmusic()
 	})
 	but4.addEventListener('touchend', () => {
 		but4.classList.remove('tooyellow')
@@ -373,6 +382,7 @@ let onclick = () => {
 
 	but8.addEventListener('touchstart', () => {
 		but8.classList.add('tooyellow')
+		playmusic()
 	})
 	but8.addEventListener('touchend', () => {
 		but8.classList.remove('tooyellow')
@@ -384,7 +394,7 @@ let onclick = () => {
 	})
 
 	but12.addEventListener('touchstart', () => {
-
+playmusic()
 		if (img.style.display == 'none') {
 			but12.classList.add('tooyellow')
 			but12.innerHTML = '您的健<br>康报告'
@@ -395,10 +405,10 @@ let onclick = () => {
 				froujg.innerHTML = '差'
 			} else if (ans < 250) {
 				froupingyu.src = 'img/p5/良.png'
-				froujg.innerHTML = '差'
+				froujg.innerHTML = '良'
 			} else {
 				froupingyu.src = 'img/p5/优.png'
-				froujg.innerHTML = '差'
+				froujg.innerHTML = '优'
 			}
 
 		}
@@ -448,4 +458,8 @@ let onclick = () => {
 		img.style.display = 'block'
 		but12.innerHTML = '='
 	})
+}
+let playmusic=()=>{
+	let buttoncilck=document.getElementById('buttoncilck')
+	buttoncilck.play()
 }
