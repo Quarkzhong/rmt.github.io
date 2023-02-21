@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/index.css">
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<div class="box" style="top: 0;">
+			<div class="loading" style="opacity: 1;">
+				<img src="img/p1login/hua.png" alt="" class="loadimg">
+				<p>LOADING</p>
+				<p class="loaddian"></p>
+				<p class="loadnumber">100%</p>
+			</div>
+			<div class="one" style="opacity: 1;">
+				<img src="img/p2/左轮.png" alt="" class="zuolun">
+				<img src="img/p2/右轮.png" alt="" class="youlun">
+				<div class="onebody">
+					<p style="opacity: 0;">随着农业技术的发展</p>
+					<p style="opacity: 0;">本应成为主食的五谷杂粮</p>
+					<p style="opacity: 0;">却渐渐被快餐零食所替代</p>
+					<p style="opacity: 0;">人们的健康水平</p>
+					<p style="opacity: 0;">也在餐饮条件的变化下</p>
+					<p style="opacity: 0;">变得参差不齐</p>
+				</div>
+				<img src="img/p2/箭头.png" alt="" class="downjt" style="opacity: 0;">
+			</div>
+			<div class="two" style="opacity: 1;">
+				<div class="shang" style="transform: translateX(100%);">
+					<img src="img/p3/uptext.png" alt="" style="opacity: 0;">
+				</div>
+				<div class="xia" style="transform: translateX(-100%);">
+					<img src="img/p3/downtext.png" alt="" style="opacity: 0;">
+				</div>
+			</div>
+
+
+			<div class="three" style="opacity: 1;">
+				<img src="img/p4/左地瓜.png" alt="" class="threezuo" style="transform: translateX(-100%);">
+				<img src="img/p4/稻子.png" alt="" class="threezhong" style="transform: translateY(-200%);">
+				<img src="img/p4/右豆子.png" alt="" class="threeyou" style="transform: translateX(100%);">
+				<img src="img/p4/文字.png" alt="" class="threetext" style="opacity: 0;">
+				<div class="frame" style="display: none;">
+					<img src="img/p4/上班族.png" alt="">
+					<img src="img/p4/学生.png" alt="">
+				</div>
+				<div class="threebody" style="opacity: 0;">
+					<input type="text" placeholder="输入账号" id="name">
+					<input type="text" placeholder="选择职业" readonly id="changezhiye">
+					<span id="sjx">▼</span>
+					<img src="img/p4/down button.png" alt="" onclick="sumbit()">
+				</div>
+				<div class="mskbg" style="display: none;" onclick="none()"></div>
+				<div class="msk" style="display: none;" onclick="none()">
+					<img src="img/p4/xm.png" alt="">
+				</div>
+			</div>
+
+
+			<div class="frou">
+				<div class="fhui" onclick="fhui()">
+					<
+				</div>
+				<div class="froubody">
+					<div class="show">
+						<img src="img/p5/请点击按键 开始计算.png" alt="" class="showimg" style="display: block;">
+						<div id="guocheng" class="guocheng">
+
+						</div>
+						<div id="sum" class="sum">
+
+						</div>
+					</div>
+					<div class="frouitem">
+						<div class="frouhan">
+							<div class="froubutton">
+								大豆
+							</div>
+							<div class="froubutton">
+								绿豆
+							</div>
+							<div class="froubutton">
+								红豆
+							</div>
+							<div class="froubutton yellow">
+								AC
+							</div>
+						</div>
+						<div class="frouhan">
+							<div class="froubutton">
+								稻子
+							</div>
+							<div class="froubutton">
+								玉米
+							</div>
+							<div class="froubutton">
+								黑豆
+							</div>
+							<div class="froubutton yellow" style="font-size: 10vw;">
+								+
+							</div>
+						</div>
+						<div class="frouhan">
+							<div class="froubutton">
+								软糖
+							</div>
+							<div class="froubutton">
+								雪糕
+							</div>
+							<div class="froubutton">
+								辣条
+							</div>
+							<div class="froubutton yellow">
+								=
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="jsqmskbg" style="display: none;"></div>
+				<div class="jsqmsk" style="display: none;">
+					<div class="jsqname"></div>
+					<div class="jsqfenshu"></div>
+					<div class="jsqjieguo"></div>
+					<img src="img/p5/优.png" alt="" class="jsqpingyu">
+				</div>
+				
+			</div>
+		</div>
+
+		<script>
+			$loading()
+		</script>
+	</body>
+</html>
