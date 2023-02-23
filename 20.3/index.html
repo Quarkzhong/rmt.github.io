@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/index.css">
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<audio src="media/bgm.mp3" loop style="display: none;" id="aud"></audio>
+		<div class="box" style="top:0vh;">
+			<div class="loading">
+				<div class="qiti">
+					<img src="img/loading/左气.png" alt="">
+					<img src="img/loading/中气.png" alt="">
+					<img src="img/loading/右气.png" alt="">
+				</div>
+				<img src="img/loading/meat.png" alt="" class="dpr">
+				<p class="loadingtext">LOADING</p>
+				<p class="dian"></p>
+				<p class="bfb"></p>
+			</div>
+			<div class="one">
+				<img src="img/music.png" alt="" class="music musicxz">
+				<img src="img/p2/logo.png" alt="" class="logo">
+				<p class="onetext">丨聊美食<br />&nbsp;&nbsp;&nbsp;&nbsp;我是专业的</p>
+				<div class="onequan">
+					<div class="xunaz">
+						<img src="img/p2/8角.png" alt="">
+						<img src="img/p2/冰糖.png" alt="">
+						<img src="img/p2/黄酒.png" alt="">
+						<img src="img/p2/猪肉.png" alt="">
+						<img src="img/p2/葱姜.png" alt="">
+					</div>
+				</div>
+				<img src="img/loading/meat.png" alt="" class="dpr onedpr">
+				<div class="ljzf">
+					<p>了解做法</p>
+					<img src="img/滑动箭头.png" alt="">
+				</div>
+			</div>
+			<div class="two">
+				<img src="img/music.png" alt="" class="music musicxz">
+				<img src="img/p2/logo.png" alt="" class="logo">
+				<img src="img/p3/猪肉文字.png" alt="" class="twotext">
+				<img src="img/p3/猪肉.png" alt="" class="twobg">
+				<div class="twoxuan">
+					<img src="img/p3/猪肉亮.png" alt="">
+					<img src="img/p3/葱姜不亮.png" alt="">
+					<img src="img/p3/冰糖不亮.png" alt="">
+				</div>
+				<div class="ljzf">
+					<img src="img/滑动箭头.png" alt="">
+				</div>
+			</div>
+			<div class="three">
+				<img src="img/music.png" alt="" class="music musicxz">
+				<img src="img/p4/text.png" alt="" class="threetext">
+				<div>
+					<div class="qiti dadprqi">
+						<img src="img/loading/左气.png" alt="">
+						<img src="img/loading/中气.png" alt="">
+						<img src="img/loading/右气.png" alt="">
+					</div>
+					<img src="img/loading/meat.png" alt="" class="dpr dadpr">
+				</div>
+			</div>
+		</div>
+		<script>
+		loading()
+		let addmusicclick=()=>{
+			let box = document.getElementsByClassName('music')
+			for (var i = 0; i < box.length; i++) {
+				box[i].addEventListener('click',()=>{
+					if(document.getElementById('aud').paused){
+						playmusic()
+					}else{
+						stopmusic()
+					}
+				})
+			}
+		}
+		addmusicclick()
+		let stopmusic = () => {
+			document.getElementById('aud').pause()
+			let box = document.getElementsByClassName('music')
+			for (var i = 0; i < box.length; i++) {
+				box[i].classList.remove('musicxz')
+			}
+		
+		}
+		
+		let playmusic = () => {
+			document.getElementById('aud').play()
+			let box = document.getElementsByClassName('music')
+			for (var i = 0; i < box.length; i++) {
+				box[i].classList.add('musicxz')
+			}
+		}
+		
+		</script>
+	</body>
+</html>

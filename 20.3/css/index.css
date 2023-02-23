@@ -1,0 +1,318 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+	font-family: 'dpr';
+	src: url('../media/《一碗东坡肉》字体.otf');
+}
+
+html,
+body {
+	overflow: hidden;
+	font-family: 'dpr';
+	color: rgb(137, 73, 50);
+	font-weight: 1000;
+	font-size: 5vw;
+}
+
+.box {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+}
+
+.loading {
+	background: url('../img/loading/bg.png') no-repeat center center;
+	width: 100vw;
+	height: 100vh;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+
+.qiti {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	z-index: 1;
+	transform: translate(-50%, -50%) scale(1.5);
+}
+
+.qiti img:nth-child(1) {
+	position: absolute;
+	bottom: 0;
+	left: -3vw;
+	animation: shangxia 2s infinite linear;
+	animation-delay: -1.5s;
+}
+
+.qiti img:nth-child(2) {
+	position: absolute;
+	bottom: 0vh;
+	animation: shangxia 2s infinite linear;
+	animation-delay: -3s;
+}
+
+.qiti img:nth-child(3) {
+	position: absolute;
+	bottom: -1vh;
+	left: 4vw;
+	animation: shangxia 2s infinite linear;
+	animation-delay: -2s;
+}
+
+@keyframes shangxia {
+	0% {
+		transform: translateY(1vh);
+		opacity: 0;
+	}
+
+	25% {
+		transform: translateY(.25vh);
+		opacity: 1;
+	}
+
+	75% {
+		transform: translateY(-1vh);
+		opacity: .5;
+	}
+
+	100% {
+		transform: translateY(-2vh);
+		opacity: 0;
+	}
+}
+
+.dpr {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	width: 60vw;
+	transform: translate(-50%, -50%);
+
+}
+
+.loadingtext {
+	position: absolute;
+	top: 58%;
+	left: 38%;
+}
+
+.dian {
+	position: absolute;
+	top: 57.2%;
+	left: 61%;
+}
+
+.bfb {
+	position: absolute;
+	top: 62%;
+	left: 45%;
+	font-size: 4vw;
+}
+
+.one {
+	background: url('../img/p2/bg.png') no-repeat center center;
+	width: 100vw;
+	height: 100vh;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.onequan {
+	position: absolute;
+	background: url('../img/p2/circle.png') no-repeat center center;
+	width: 200vw;
+	height: 100vh;
+	background-size: 100% 100%;
+
+}
+
+.xunaz {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	animation: daxuanz 5s infinite linear;
+}
+
+.onequan img {
+	animation: xiaoxuanz 5s infinite linear;
+}
+
+.onequan img:nth-child(1) {
+	position: absolute;
+	top: 40%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+}
+
+.onequan img:nth-child(2) {
+	position: absolute;
+	top: 40%;
+	left: 75%;
+	transform: translate(-50%, -50%);
+}
+
+.onequan img:nth-child(3) {
+	position: absolute;
+	top: 60%;
+	left: 75%;
+	transform: translate(-50%, -50%);
+}
+
+.onequan img:nth-child(4) {
+	position: absolute;
+	top: 60%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+}
+
+.onequan img:nth-child(5) {
+	position: absolute;
+	top: 70%;
+	left: 16%;
+	transform: translate(-50%, -50%);
+}
+
+@keyframes xiaoxuanz {
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg) scale(1.2);
+	}
+
+	100% {
+		transform: translate(-50%, -50%) rotate(360deg) scale(1.2);
+	}
+}
+
+@keyframes daxuanz {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.onedpr{
+	position: absolute;
+	left: 90vw;
+	top: 50vh;
+	transform: scale(1.1) translate(-50%,-50%);
+}
+.logo{
+	position: absolute;
+	left:50%;
+	top: 10%;
+	z-index: 9;
+	transform: scale(1.5) translate(-50%,-50%);
+}
+.onetext{
+	position: absolute;
+	font-size: 8vw;
+	top: 15vh;
+	left: 5vw;
+	z-index: 1;
+}
+.ljzf{
+	position: absolute;
+	top: 95vh;
+	left: 50vw;
+	transform: translate(-50%,-50%) scale(1.5);
+	text-align: center;
+	font-size: 3vw;
+}
+.two{
+	background: url('../img/p3/bg.png') no-repeat center center;
+	width: 100vw;
+	height: 100vh;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 100vh;
+	left: 0;
+}
+.twotext{
+	position: absolute;
+	width: 90vw;
+	left: 5vw;
+	top: 25%;
+	z-index: 1;
+}
+.twobg{
+	position: absolute;
+	top: 30vh;
+	right: 0vw;
+	width: 50vw;
+}
+.twoxuan{
+	position: absolute;
+	top: 80vh;
+	left: 50%;
+}
+.twoxuan img:nth-child(1){
+	position: absolute;
+	top: 0;
+	transform: translate(-50%,-50%);
+	left: -33vw;
+	width: 30vw;
+}
+.twoxuan img:nth-child(2){
+	position: absolute;
+	top: 0;
+	transform: translate(-50%,-50%);
+	width: 30vw;
+}
+.twoxuan img:nth-child(3){
+	position: absolute;
+	top: 0;
+	transform: translate(-50%,-50%);
+	width: 30vw;
+	left: 33vw;
+}
+.three{
+	background: url('../img/p4/bg.png') no-repeat center center;
+	width: 100vw;
+	height: 100vh;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 200vh;
+	left: 0;
+}
+.dadpr{
+	position: absolute;
+	top: 75%;
+}
+
+.dadprqi{
+	position: absolute;
+	top: 65%;
+}
+.threetext{
+	width: 90vw;
+	position: absolute;
+	left: 5vw;
+	top: 20vw;
+}
+.music{
+	position: absolute;
+	top: 3vh;
+	right: 5vw;
+	width: 8vw;
+	z-index: 9;
+}
+.musicxz{
+	animation: music 2s linear infinite;
+}
+@keyframes music {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
